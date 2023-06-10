@@ -1,0 +1,226 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ color: #6c6b6b;               /* 色指定グレー */
+}
+
+a {                            /* テキストの装飾を指定する */
+  text-decoration: none;       /* テキストの装飾を行わないnone */
+}
+
+header {                       /* h1 classについて*/
+ width: 90%;                   /* 横幅90% */
+ padding: 15px 0;              /* 上下間隔15px */
+ margin: 0 auto;               /* ブロックレベル要素を中央揃えにする*/
+ text-align: center;           /* 文字水平位置を中央寄せ */
+}
+
+header .heading {             /* headerタグ内のheadingクラスにのみ反映される */
+ font-size: 32px;              /* 文字大きさ32px */
+}
+
+.nav-list {                    /* ul親要素について */
+  text-align: center;          /* Homeを中央寄せ*/
+  padding: 10px 0;             /* 文字の上下高さ10px */
+  margin: 0 auto;              /* ブロックレベル要素を中央揃えにする */
+}
+
+.nav-list-item {               /* About Topicを中央寄せ */
+  list-style: nane;            /* ulの点が消えます? */
+  display:  inline-block;      /* 要素をインライン・ブロックに指定横並びにする */
+  margin: 0 20px;              /* 文字の間隔20px */
+}
+
+.main-visual {                        /* main-visual用のトップ画像 */
+  width:  100%;                       /* 横幅いっぱい */
+  height: 300px;                      /* 高さ300px */
+  background-image: url(img/mv.jpg);  /* 画像caravan内のフォルダ名img/名前.jpg */
+  background-size: cover;             /* 縦横比を維持したまま背景領域を埋め尽くす */
+  background-position: center;        /* 背景画像を中央に配置 */
+}
+
+.main-visual-content {                 /* トップ画像左側効果適用 */
+  width:  40%;                         /* 横幅40% */
+  height: 300px;                       /* 親の高さに揃える */
+  background-color: rgba(0,0,0, 0.5);  /* 背景色を半透明の黒にする */
+  text-align: center;                  /* 文字の水平位置を中央揃えに */
+  padding-top: 105px;                  /* 上側の内側余白で垂直方向の位置を調整 */
+}
+
+.main-visual-text {                   /* トップ画像テキストについて */
+  color: #fff;                        /* 文字色を白に変更 */
+}
+
+.main-visual-name {                   /* テキスト,st.augustineについて */
+  margin-top: 30px;                   /* 上側の外側の余白 */
+  color: #fff;                        /* 文字色を白に変更 */
+}
+
+main {                          /* テキスト,Recent Blogsについて */
+  width:800px;                  /* 横幅800px */
+  display: flex;                /* Flexboxの利用,親要素に対して子要素を横並びにする */
+  justify-content: center;      /* 要素の横並び・中央寄せ */
+  margin: 0 auto;               /* 要素の中央揃え */
+  padding: 70px 0;              /* 上下に70px,左右に0pxの内側余白 */
+}
+
+.blog {                         /* section class親について */
+  width: 1000px;                /* 横幅540px */
+  margin-right: 30px;           /* 領域の右側余白30px */
+}
+
+.blog-heading {                     /* h2 class子についてテキスト,Recent Blogsについて */
+  border-bottom: 8px solid #f7f7f7; /* テキスト下,実線薄いグレー */
+  text-align: center;               /* 文字を中央寄せ */
+  line-height: 0.6;                 /* 行間の高さ0.6px? */
+}
+
+.blog-box {                         /* テキスト,Recent Blogsについて?*/
+  padding-top: 50px;                /* パディング領域上側高さ50px */
+}
+
+
+.blog-item {                        /* div class親についてテキスト,Hopeful lessons from～ */
+  padding-bottom: 20px;             /* 内側余白下20px */
+  margin-bottom: 20px;              /* 外側余白下20px */
+  border-bottom: 1px solid #f7f7f7; /* 要素の外側の下側,実線1px */
+  display: flex;                    /* Flexboxの利用 親要素に対して子要素を横並びにする */
+  justify-content: flex-start;      /* 要素の横並び・左寄せ */
+}
+
+.blog-image {                 /* 画像forest.jpgに関して */
+  height: 180px;              /* 画像大きさ・高さ180px指定 */
+}
+
+.blog-text {                  /* section class子について */
+  display:  inline-block;      /* 要素をインライン・ブロック・横並びに指定 */
+  padding:25px 0 0 30px;      /* パディング領域上下25px左右30px?*/
+}
+
+.blog-text-heading {          /* h3 class 子について*/
+  padding-bottom: 15px;       /* パディング領域の下側,高さ15px */
+}
+
+.blog-date {                  /* p class子についてJune 19, 2017 */
+  font-size: 12px;            /* 文字大きさ12px */
+  display: inline-block;      /* 要素をインライン・ブロック・横並びに指定 */
+}
+
+.category {                    /* span class子について */
+  display:  inline-block;      /* 要素をインライン・ブロック・横並びに指定 */
+  padding: 5px 8px;            /* 内側の余白 上下5px 左右8px */
+  background-color: #acabab;   /* 背景色グレー */
+  border-radius: 3px;          /* 要素の境界の外側の角を3px丸めます*/
+  color: #fff;                 /* 文字色 白 */
+  font-size: 11px;             /* 文字サイズ11px */
+}
+
+.pagination {
+  text-align: center;          /* インライン要素・中央寄せ */
+  padding-top: 50px;           /* 内側上余白50px */
+}
+
+.pagination p {
+  display: inline-block;      /* 要素をインライン・ブロック・横並びに指定 */
+  width: 30px;                /* 横幅30px */
+  height: 30px;               /* 高さ30px */
+  margin: 0 5px;              /* 外側余白左右5px? */
+  color: #fff;                /* 文字色変更白 */
+  background-color: #acabab;  /* 背景色グレー */
+  border-radius: 3px;         /* 要素の境界の外側の角を3px丸めます3px */
+  line-height: 30px;          /* 行間高さ30px */
+}
+
+.sidebar {                     /* popularに関して */
+  width: 500px;                /* テキスト横幅調整 */
+
+}
+
+.common-heading {                   /* popularに関して? */
+  border-bottom: 8px solid #f7f7f7; /* 実線下側半透明グレー8px*/
+  text-align: center;               /* インライン要素・中央寄せ*/
+  line-height: 0.6;                 /* 線の高さ*/
+}
+
+.sidebar-contents {                 /* popularに関して? */
+  padding: 50px 0;                  /* 内側上下左右余白50px*/
+}
+
+.popular-text,
+.categories-text {
+  padding-bottom: 5px;               /* パディング下側5px */
+  border-bottom: 1px solid #f7f7f7;  /* 実線下側半透明グレー1px*/
+  margin-bottom: 5px;                /* 外側下5px指定 */
+}
+
+.popular-text:last-child,           /* テキスト用の最後にだけ効果が出る */
+.categories-text:last-child {
+  margin: 0;                        /* 要素の余白? */
+  padding: 0;                       /* 上下左右余白0px */
+  border: none;                     /* 線の種類（border-style）を「なし」にする状態*/
+}
+
+
+
+.instagram-heading,
+.common-heading {
+  display: flex;                    /* インラインブロックを横並びにする */
+  flex-wrap: wrap;                  /* フレックスアイテムを単一行に押し込むか複数行に折り返してもよいかを指定 */
+}
+
+
+
+.instagram-box {                    /* instagram画像にtついて */
+  width: 110px;                     /* 横幅110px */
+  padding-top: 110px;               /* 上側の余白110px */
+  background-size: cover;           /* 背景大きさ */
+  background-position: center;      /* 背景中央寄せ */
+  margin-bottom: 10px;              /* 下側の余白10px */
+}
+
+.instagram-box:nth-child(odd) {
+  margin: 0 10px 10px 0;            /* 左右にかかる？ */
+}
+
+.instagram-box:nth-child(1) {              /* */
+  background-image: url(img/airport.jpg);  /* */
+}
+
+.instagram-box:nth-child(2) {              /* */
+  background-image: url(img/japan.jpg);  /* */
+}
+
+.instagram-box:nth-child(3) {              /* */
+  background-image: url(img/snow.jpg);  /* */
+}
+
+.instagram-box:nth-child(4) {              /* */
+  background-image: url(img/japan2.jpg);  /* */
+}
+
+.instagram-box:nth-child(5) {              /* */
+  background-image: url(img/lake.jpg);  /* */
+}
+
+.instagram-box:nth-child(6) {              /* */
+  background-image: url(img/road.jpg);  /* */
+}
+
+
+
+footer {
+  width:  100%;             /* 横幅100% */
+  height: 120px;            /* 高さ120px */
+  text-align: center;       /* テキスト中央寄せ */
+  line-height: 120px;       /* 文字上下位置 */
+  background-color:#848282; /* 背景色グレー */
+}
+
+.footer-text{
+  color: #fff;              /* 文字色変更 白 */
+}
+
+
+

@@ -1,0 +1,62 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;                 /* 外側の余白*/
+  padding: 0;                /* 内側の余白*/
+  box-sizing: border-box;    /*borderやpaddingで指定される
+                               枠線や余白の大きさを
+                               要素の幅・高さ(width・height)に
+                               含めるかどうかを指定する
+                               CSSプロパティ */
+}
+
+main {                      /* mainについて */
+  width: 960px;             /* 横幅960px */
+  margin: 50px auto;        /* 上下左右*/
+}
+
+.item-list {                /* ul class親について */
+  margin-bottom: 50px;      /* 外側余白,左側,50px */
+}
+
+.item {                     /* li class子について*/
+  padding: 20px;            /* 内側余白全20px */
+  list-style: none;         /* ul親の左点消去 */
+}
+
+.item:nth-child(odd) {      /* 疑似クラス偶数(even)奇数(add)*/
+  background-color: #eee;   /* 背景色奇数淡グレー */
+}
+
+.box-list {                 /* div class親について */
+  display: flex;            /* 親要素に対して子要素を横並びにする
+                               親要素にしか適用不可？*/
+                               
+  flex-wrap: wrap;          /* display: flexに対して
+                               フレックスアイテムを
+                                   単一行に押し込む
+                                   複数行に折り返す
+                               指定が可能になる*/
+}
+
+.box {                        /* div class子について */
+  background-color: #ffd700;  /* 背景色指定オレンジ */
+  width: 30%;                 /* 横幅30% */
+  height: 200px;              /* 高さ200px */
+  margin-right: 5%;           /* 外側余白右5% */
+  margin-bottom: 40px;        /* 外側余白下40px */
+}
+
+                              /* div class子について2 */
+.box:first-child,             /* .boxの1番目に対して */
+.box:nth-child(5),            /* .boxの5番目に対して */
+.box:last-child {             /* .boxの9番目に対して */
+  background-color: #ff8c00;  /* 背景色指定濃いオレンジ 上書き */
+}
+
+.box:nth-child(3n) {           /* .boxの3番目に対して？ */
+  margin-right: 0;             /* 外側余白右0 */
+}
+
+.box:nth-last-child(-n + 3) {  /* .boxの9番目に対して */
+  margin-bottom: 0;            /* 外側余白下0*/
+}

@@ -1,0 +1,118 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width:   100%;                  /* 横幅100% */
+  padding: 20px 0;                  /* 上下左右余白20px */
+  text-align: center;            /* headerを中央寄せ */
+}
+
+.nav-list{
+ text-align: center;               /* テキストを中央寄せ */
+ padding: 15px 0;                  /* 内側の余白上下左右15px */
+ margin: 0 auto;                   /* 外側ブロックレベル要素の<p>を中央揃え*/
+ border-bottom: 1px solid #848282; /* 実線下側グレー1px */
+ border-top: 1px solid #848282;    /* 実線上側グレー1px */
+}
+
+.nav-list-item {
+ list-style: none;
+ display: inline-block;
+ margin: 0 20px;
+}
+
+
+.main{
+ width: 800px;                    /* 横幅800px */
+ margin: 50px auto;               /* 中央寄せ50px （左右に余白がないとできない） */
+ display: flex;                    /* Flexboxの利用 */
+ flex-wrap: wrap;                 /* */
+}
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: #e6ffe9;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: #cbffd3;
+}
+
+.box3 {
+  width: 200px;
+  height: 200px;
+  background-color: #aeffbd;
+}
+
+.box4 {
+  width: 200px;
+  height: 200px;
+  background-color: #93ffab;
+}
+
+.box5 {
+  width: 200px;
+  height: 200px;
+  background-color: #f3ffd8;
+}
+
+.box6 {
+  width: 200px;
+  height: 200px;
+  background-color: #edffbe;
+}
+
+.box7 {
+  width: 200px;
+  height: 200px;
+  background-color: #e9ffa5;
+}
+
+.box8 {
+  width: 200px;
+  height: 200px;
+  background-color: #e4ff8d;
+}
+
+.box9 {
+  width: 200px;
+  height: 200px;
+  background-color: #d9e5ff;
+}
+
+.box10 {
+  width: 200px;
+  height: 200px;
+  background-color: #bad3ff;
+}
+
+.box11 {
+  width: 200px;
+  height: 200px;
+  background-color: #a4c6ff;
+}
+
+.box12 {
+  width: 200px;
+  height: 200px;
+  background-color: #8eb8ff;
+}
+
+footer {
+  width: 100%;                      /* 横幅100% */
+  height: 120px;                    /* 高さ120px */
+  text-align: center;               /* テキストを中央揃え */
+  line-height: 120px;               /* 行ボックスの高さ */
+  background-color: #848282;        /* 背景色グレー変更 */
+}
+
+.footer-text {                      /* テキストカラー変更 */
+  color: #fff;                      /* 文字色白 */
+}

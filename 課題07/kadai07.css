@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-visual {                          /* トップ画像について */
+  width: 100%;                          /* 横幅100% */
+  height: 400px;                        /* 高さ400px */
+  background-image: url(07img/mv.jpg);  /* 07imgフォルダ名/名前.jpg */
+  background-size: cover;               /* 属性による指定要素を埋める */
+  background-position: bottom;          /* 画像の表示場所を下に指定*/
+}
+
+.headline {             /* サービス紹介について */
+  padding: 20px;        /* 上下余白指定20px */
+}
+
+main {                  /* main/section/全てに適用 */
+  width: 840px;         /* 横幅の位置840px */
+  margin: 50px auto;    /* テキスト間隔幅50px */
+}
+
+.service1 {
+  margin-bottom: 30px;              /* 余白を下側に30px空ける？*/
+  border-bottom: 1px solid #d1d1d1; /* 実線1pxで書く */
+  padding-bottom: 30px;             /* 実線を下側に指定 */
+}
+
+.service2 {
+  margin-bottom: 30px;              /* 余白を下側に30px空ける？*/
+  border-bottom: 1px solid #d1d1d1; /* 実線1pxで書く */
+  padding-bottom: 30px;             /* 実線を下側に指定 */
+}
+
+.service3 {
+  margin-bottom: 30px;              /* 余白を下側に30px空ける？*/
+  border-bottom: 1px solid #d1d1d1; /* 実線1pxで書く */
+  padding-bottom: 30px;             /* 実線を下側に指定 */
+}
+
+.service4 {
+  margin-bottom: 30px;              /* 余白を下側に30px空ける？*/
+  border-bottom: 1px solid #d1d1d1; /* 実線1pxで書く */
+  padding-bottom: 30px;             /* 実線を下側に指定 */
+}
+
+
