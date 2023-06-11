@@ -10,16 +10,33 @@ a {
   text-decoration: none;
 }
 
-header {
-  width: 90%; /* 横幅90% */
-  padding: 15px 0;
-  margin: 0 auto;
-  text-align: center;
+header, nav, h2, .main-visual, footer { /* テキスト変更コマンド*/
+  font-family: Chalkduster, 
+                "Bradley Hand",Courier,
+                "Segoe Print", sans-serif;
 }
 
-header .heading {
-  /* headerタグ内のheadingクラスにのみ反映される */
-  font-size: 32px;
+header {                    /* #headerについて */
+  width: 90%;               /* 横幅90% */
+  padding: 15px 0;          /* 内側余白上下15px */
+  margin: 0 auto;           /* 外側余白中央揃え */
+  text-align: center;       /* テキスト中央寄せ */
+  position: relative;       /* #socialの基準位置を相対位置を指定する*/
+}
+
+.social i {                 /* #i class 子について */
+  display: inline-block;    /* インラインブロック要素に変更する値*/
+  margin-left: 20px;        /* 外側余白左寄せ20px */
+}
+
+.social {                   /* div class 親について*/
+  position: absolute;       /* headerの左上を基準に絶対位置で指定する */
+  top: 22px;                /* headerの左上から22px下側へ移動する */
+  right: 22px;              /* headerの右上から22px左側へ移動する */
+}
+
+header .heading {           /* headerタグ内のheadingクラスにのみ反映される */
+  font-size: 32px;          /* テキストの大きさ32px */
 }
 
 .nav-list {
