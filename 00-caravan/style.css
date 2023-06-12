@@ -51,7 +51,7 @@ header .heading {           /* headerタグ内のheadingクラスにのみ反映
   margin: 0 20px;
 }
 
-.main-visual {                           /* *
+.main-visual {                           /* */
   width: 100%;                           /* 横幅いっぱい */
   height: 300px;                         /* 高さ300px */
   background-image: url(img/mv.jpg);     /* */

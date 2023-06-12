@@ -3,9 +3,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #6c6b6b;
 }
 
-.fab {
-  font-size: 32px;
+.fab {                   /* i class　子について*/
+  font-size: 32px;       /* テキスト大きさ32px */
 }
+
+.position {              /* div class　親全般 */
+  position: absolute;    /* 要素の絶対位置を決める,
+                            これを指定してないと
+                            top,rightが指定できない */
+  top: 100px;            /* 親要素を基準に上から100pxの位置 */
+  right: 40px;           /* 親要素を基準に右から40pxの位置 */
+}
+
