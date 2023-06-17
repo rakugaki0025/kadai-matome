@@ -1,0 +1,84 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;                           /* 外側余白 */
+  padding: 0;                          /* 内側余白 */
+  box-sizing: border-box;              /* 境界およびパディングを
+                                          要素に指定した
+                                          width および 
+                                          height の中で
+                                          取るよう
+                                          ブラウザーに
+                                          指示します */
+  color: ff9A4B;                       /* 文字色黒指定 */
+}
+
+a {
+  text-decoration: none;               /* アンダーライン無効 */
+}
+
+header {                          /* 親？classなし*/
+  height: 50px;                   /* 高さ50px */
+  background-color: #ff9a4b ;      /* 背景色カラー */
+}
+
+main {                            /* 親？classなし*/
+  width: 960px;                   /* 横幅960px */
+  margin:50px auto;               /* ブロックレベル要素を全50px中央揃え*/
+  display:flex;                   /* インラインブロック要素を横並びにする */
+}
+
+.step-box {                       /* div class親？について */
+  width: 300px;                   /* 横幅300px */
+  margin-right:30px;              /* 外側余白右30px */
+  padding: 10px;                  /* 内側余白全10px */
+  position: relative;             /* 要素の現在位置を基準に相対位置を指定する*/
+  background-color: #eee;         /* 写真背景色グレー指定 */
+}
+
+.step-box:last-child {            /* 最後の要素にかかる？ */
+  margin-right: 0;                /* 外側余白,右*/
+}
+
+.step-img1 {                              /* div class子について */
+  height: 150px;                          /* 高さ50px */
+  background-image: url(img/flow01.png);  /* 背景画像指定 */
+  background-position: bottom;            /* 背景画像表示位置下 */
+  background-size: cover;                 /* 縦横比も保持し指定サイズにいれる? */
+}
+
+.step-img2 {                              /* div class子について */
+  height: 150px;                          /* 高さ50px */
+  background-image: url(img/flow02.png);  /* 背景画像指定 */
+  background-position: bottom;            /* 背景画像表示位置下 */
+  background-size: cover;                 /* 縦横比も保持し指定サイズにいれる? */
+}
+
+.step-img3 {                              /* div class子について */
+  height: 150px;                          /* 高さ150px */
+  background-image: url(img/flow03.png);  /* 背景画像指定 */
+  background-position: bottom;            /* 背景画像表示位置下 */
+  background-size: cover;                 /* 縦横比も保持し指定サイズにいれる? */
+}
+
+.step-num {                               /* span class子について */
+  position: absolute;                     /* 絶対配置を指定する値 */
+  top:  0;                                /* 上0px */
+  left: 0;                                /* 左0px */
+  background-color: #ff9a4b;              /* 背景色グレー指定 */
+  color: #fff;                            /* 文字色白 */
+}
+
+.title {                                  /* */
+  margin: 15px 0 5px;                     /* 外側余白,左15px,右5px, */
+}
+
+footer {                                  /* */
+  height: 50px;                           /* 高さ50px */
+  background-color: #aaa;                 /* 背景色指定*/
+}
+
+
+
+
+
+

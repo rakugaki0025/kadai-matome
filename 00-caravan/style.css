@@ -7,7 +7,7 @@
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none;               /* アンダーライン無効 */
 }
 
 header, nav, h2, .main-visual, footer { /* テキスト変更コマンド*/
@@ -39,22 +39,22 @@ header .heading {           /* headerタグ内のheadingクラスにのみ反映
   font-size: 32px;          /* テキストの大きさ32px */
 }
 
-.nav-list {
-  text-align: center;
-  padding: 10px 0;
-  margin: 0 auto;
+.nav-list {                 /* */
+  text-align: center;       /* テキストの水平方向への配置を指定する */
+  padding: 10px 0;          /* 外側余白上下10px */
+  margin: 0 auto;           /* 内側余白中央揃え */
 }
 
-.nav-list-item {
-  list-style: none;
-  display: inline-block;
-  margin: 0 20px;
+.nav-list-item {            /* */
+  list-style: none;         /* ulの点が消えます*/
+  display: inline-block;    /* 横幅と高さを指定できる値 */
+  margin: 0 20px;           /* 内側余白左右20px */
 }
 
 .main-visual {                           /* */
   width: 100%;                           /* 横幅いっぱい */
   height: 300px;                         /* 高さ300px */
-  background-image: url(img/mv.jpg);     /* */
+  background-image: url(img/mv.jpg);     /* 背景画像指定 */
   background-size: cover;                /* 縦横比を維持したまま背景領域を埋め尽くす */
   background-position: center;           /* 背景画像を中央に配置 */
 }
@@ -64,134 +64,134 @@ header .heading {           /* headerタグ内のheadingクラスにのみ反映
   height: 300px;                         /* 親の高さに揃える */
   background-color: rgba(0, 0, 0, 0.5);  /* 背景色を半透明の黒にする */
   text-align: center;                    /* 文字を中央揃えにする */
-  padding-top: 105px;                    /* 上側の内側余白で垂直方向の位置を調整 */
+  padding-top: 105px;                    /* 内側余白,上105px */
 }
 
-.main-visual-text {
-  color: #fff; /* 文字色を白に変更 */
+.main-visual-text {                      /* */
+  color: #fff;                           /* 文字色を白に変更 */
 }
 
 .main-visual-name {
-  margin-top: 30px; /* 上側の外側の余白 */
-  color: #fff; /* 文字色を白に変更 */
+  margin-top: 30px;                      /* 外側余白上30px */
+  color: #fff;                           /* 文字色を白に変更 */
 }
 
 main {
-  width: 800px; /* 横幅800px */
-  display: flex; /* Flexboxの利用 */
-  justify-content: center; /* 要素の横並び・中央寄せ */
-  margin: 0 auto; /* 要素の中央揃え */
-  padding: 70px 0; /* 上下に70px、左右に0pxの内側余白 */
+  width: 800px;                          /* 横幅800px */
+  display: flex;                         /* Flexboxの利用 */
+  justify-content: center;               /* 要素の横並び・中央寄せ */
+  margin: 0 auto;                        /* 外側余白中央揃え */
+  padding: 70px 0;                       /* 内側余白,上下70px,左右0px */
 }
 
-.blog {
-  width: 540px;
-  margin-right: 30px; /* 領域の右側余白 */
+.blog {                                  /* */
+  width: 540px;                          /* 横幅540px */
+  margin-right: 30px;                    /* 外右側余白30px */
 }
 
-.blog-heading {
-  border-bottom: 8px solid #f7f7f7;
-  text-align: center;
-  line-height: 0.6;
+.blog-heading {                          /* */
+  border-bottom: 8px solid #f7f7f7;      /* 実線8px */
+  text-align: center;                    /* テキスト中央寄せ */
+  line-height: 0.6;                      /* */
 }
 
-.blog-box {
-  padding-top: 50px;
+.blog-box {                              /* */
+  padding-top: 50px;                     /* 内側余白上50px */
 }
 
-.blog-item {
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #f7f7f7;
-  display: flex;
-  justify-content: flex-start;
+.blog-item {                             /* */
+  padding-bottom: 20px;                  /* 内側余白下20px */
+  margin-bottom: 20px;                   /* 外側余白下20px */
+  border-bottom: 1px solid #f7f7f7;      /* 実線1px */
+  display: flex;                         /* Flex box適用 */
+  justify-content: flex-start;           /* */
 }
 
-.blog-image {
-  height: 180px;
+.blog-image {                            /* */
+  height: 180px;                         /* 高さ180px */
 }
 
-.blog-text {
-  padding: 25px 0 0 30px;
+.blog-text {                             /* */
+  padding: 25px 0 0 30px;                /* 内側余白,上25px,左30px */
 }
 
-.blog-text-heading {
-  padding-bottom: 15px;
+.blog-text-heading {                     /* */
+  padding-bottom: 15px;                  /* 内側余白,下15px */
 }
 
-.blog-date {
-  font-size: 12px;
-  display: inline-block;
+.blog-date {                             /* */
+  font-size: 12px;                       /* テキストサイズ12px */
+  display: inline-block;                 /* */
 }
 
 .category {
-  display: inline-block;
-  padding: 5px 8px;
-  background-color: #acabab;
-  border-radius: 3px;
-  color: #fff;
-  font-size: 11px;
+  display: inline-block;           /* */
+  padding: 5px 8px;                /* 内側余白,上下5px,左右8px */
+  background-color: #acabab;       /* 背景色 */
+  border-radius: 3px;              /* 角を丸める */
+  color: #fff;                     /* テキストカラー白 */
+  font-size: 11px;                 /* テキストサイズ11px */
 }
 
-.pagination {
-  text-align: center;
-  padding-top: 50px;
+.pagination {                      /* */
+  text-align: center;              /* */
+  padding-top: 50px;               /* 内側余白,上50px */
 }
 
 .pagination p {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  margin: 0 5px;
-  color: #fff;
-  background-color: #acabab;
-  border-radius: 3px;
-  line-height: 30px;
+  display: inline-block;           /* */
+  width: 30px;                     /* 横幅30px */
+  height: 30px;                    /* 高さ30px */
+  margin: 0 5px;                   /* 外側余白,上下0,左右5px */
+  color: #fff;                     /* テキストカラー変更 */
+  background-color: #acabab;       /* 背景色 */
+  border-radius: 3px;              /* 角を丸める */
+  line-height: 30px;               /* */
 }
 
-.sidebar {
-  width: 230px;
+.sidebar {                         /* */
+  width: 230px;                    /* 横幅230px */
 }
 
-.common-heading {
-  border-bottom: 8px solid #f7f7f7;
-  text-align: center;
-  line-height: 0.6;
+.common-heading {                   /* */
+  border-bottom: 8px solid #f7f7f7; /* 実線8px */
+  text-align: center;               /* インライン要素中央寄せ */
+  line-height: 0.6;                 /* */
 }
 
-.sidebar-contents {
-  padding: 50px 0;
+.sidebar-contents {                 /* */
+  padding: 50px 0;                  /* 内側要素50px */
 }
 
 .popular-text,
-.categories-text {
-  padding-bottom: 5px;
-  border-bottom: 1px solid #f7f7f7;
-  margin-bottom: 5px;
+.categories-text {                  /* */
+  padding-bottom: 5px;              /* 内側下側5px */
+  border-bottom: 1px solid #f7f7f7; /* 実線1px */
+  margin-bottom: 5px;               /* 外側下5px */
 }
 
 .popular-text:last-child,
-.categories-text:last-child {
-  margin: 0;
-  padding: 0;
-  border: none;
+.categories-text:last-child {       /* */
+  margin: 0;                        /* 外側余白 */
+  padding: 0;                       /* 内側余白 */
+  border: none;                     /* 実線 */
 }
 
 .instagram .sidebar-contents {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex;                    /* */
+  flex-wrap: wrap;                  /* */
 }
 
 .instagram-box {
-  width: 110px;
-  padding-top: 110px;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 10px;
+  width: 110px;                     /* 横幅110px */
+  padding-top: 110px;               /* 内側余白上110px */
+  background-size: cover;           /* 背景画像サイズ? */
+  background-position: center;      /* 背景画像位置? */
+  margin-bottom: 10px;              /* 外側余白,下10px */
 }
 
-.instagram-box:nth-child(odd) {
-  margin: 0 10px 10px 0;
+.instagram-box:nth-child(odd) {     /* */
+  margin-right: 10px;               /* 外側余白,右10px */
 }
 
 .instagram-box:nth-child(1) {
@@ -219,14 +219,107 @@ main {
 }
 
 footer {
-  width: 100%;
-  height: 120px;
-  text-align: center;
-  line-height: 120px;
-  background-color: #848282;
+  width: 100%;                 /* 横幅100% */
+  height: 120px;               /* 120px */
+  text-align: center;          /* テキスト中央寄せ */
+  line-height: 120px;          /* */
+  background-color: #848282;   /* 背景色*/
 }
 
-.footer-text {
-  color: #fff;
+.footer-text {                 /* */
+  color: #fff;                 /* 文字色,白*/
 }
 
+/* タブレット横置きサイズ（1024px) 以下の際に適用される設定 */
+@media screen and (max-width:1024px) {
+ .social i {
+  color: green;
+   }
+ }
+
+/* タブレット縦置きサイズ (768px) 以下の際に適用される設定 */
+@media screen and (max-width:768px) {
+ .social i {
+  color: red;
+ }
+}
+
+/* スマートフォンサイズ (425px) 以下の際に適用される設定 */
+@media screen and (max-width:425px){
+  header {
+    width: 100%;           /* 横幅100% */
+  }
+  
+  .nav-list {
+    width: 100%;           /* 横幅100% */
+  }
+  
+  .nav-list-item {
+    width: 100%;           /* 横幅100% */
+    margin: 0 0 10px 0;     /* 外側余白,下10px */
+  }
+  
+  .social {
+    display: none;          /* 指定した箇所を非表示にする */
+  }
+  
+  .main-visual-content {
+    width: 100%;            /* 横幅100% */
+  }
+  
+  main {
+    width: 100%;            /* */
+    display: block;         /* 指定したHTMLのタグを
+                               インラインブロック要素に
+                               変更する値*/
+  }
+  
+  .blog {                   /* */
+    width: 100%;            /* */
+    margin: 0;              /* */
+  }
+  
+  .blog-box {               /* */
+    padding-left: 2%;       /* 内側余白,左2% */
+    padding-right: 2%;      /* 内側余白,右2% */
+  }
+
+  .blog-image {
+    width: 49%;
+  }
+
+  .blog-text {
+    width: 49%;
+    padding-top: 5px;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .sidebar-contents {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .instagram-box {
+    width: 48%;
+    padding-top: 48%;
+  }
+
+  .instagram-box:nth-child(odd) {
+    margin-right: 4%;
+  }
+
+  .pagination {
+    margin-bottom: 50px;
+  }
+}
+  
+  
+  
+  
+  
+  
+  
+  
