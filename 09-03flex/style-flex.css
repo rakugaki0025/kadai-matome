@@ -1,0 +1,18 @@
+.flex {                        /* div class子について */
+  background-color: #00c7ce;   /* 背景色シアン */
+  height: 50vh;                /* vh高さの指定方法の一種 */
+  padding: 10px;               /* 内側余白,全10px */
+  display: flex;               /* Flexboxの利用 */
+  justify-content: center;     /* 横並びの要素を中央寄せ */
+  align-items:center;          /* flexアイテムを縦軸で見たときに
+                                  「上下のどこで揃えるか」を
+                                    指定するプロパティ*/
+}
+
+.flex > div {                  /* */
+  background-color: #fff;      /* 文字色白 */
+  margin: 5px;                 /* 外側余白,全5px */
+  font-size: 30px;             /* テキストサイズ30px */
+}
+
+
