@@ -9,43 +9,9 @@
                                           取るよう
                                           ブラウザーに
                                           指示します */
+  color: ff9A4B;                       /* 文字色黒指定 */
 }
 
-header {
-  width: 100%;               /* 横幅100% */
-  height: 150px;             /* 高さ150px */
-  background-color: black;     /* 背景色,紫 */
+a {
+  text-decoration: none;               /* アンダーライン無効 */
 }
-
-.box-list-1 {
-  width: 100%;               /* 横幅100% */
-  height: 150px;             /* 高さ150px */
-  background-color: red;     /* 背景色,紫 */
-}
-
-main {
-  
-}
-
-.main-left {
-  
-}
-
-.main-right {
-  
-}
-
-.box-list-2 {
-  
-}
-
-footer {
-  width: 100%;               /* 横幅100% */
-  height: 150px;             /* 高さ150px */
-  background-color: red;     /* 背景色,紫 */
-}
-
-.box-list-3 {
-  
-}
-
