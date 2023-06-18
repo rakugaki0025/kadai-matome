@@ -16,14 +16,72 @@ a {
   text-decoration: none;               /* アンダーライン無効 */
 }
 
-header {
- width:   100%;                         /* 横幅いっぱい */
- height:  50px;                         /* 高さ50px */
- background-color: #CC00FF;                 /* 背景色red */
+.header {
+  padding: 30px 20px;                    /* 内側余白,上下30px,左右20px */
+  background-color: #ff00ff;             /* 背景色紫 */
+  display: flex;                         /* Flexboxの利用 */
+  justify-content: flex-end;             /* flexの配置を後ろに指定 */
 }
 
-footer {
-  width:   100%;                         /* 横幅いっぱい */
-  height:  50px;                         /* 高さ50px */
-  background-color: #6666FF;             /* 背景色水色 */
+.header > div {
+  margin: 0 10px;
+  height:  70px;                 /* 高さ70px */
+  background-color: #fbb3ff;     /* 背景色藤色 */
+  flex-basis: 140px;             /* flexの主要部分の
+                                       初期の寸法
+                                          今回は横幅*/
 }
+
+.header > :first-child {         /* div class親にかかる */
+  margin-right: auto;            /* */
+}
+
+.main {                                /* div class親について */
+  display: flex;                       /* 親にFlexbox適用,要素を横並びに */
+  justify-content: center;             /* flexの配置を中央に指定 */
+}
+
+.sidebar {
+  width: 300px;                 /*横幅300px */
+   
+  background-color: #d8ffb6;   /* 背景色黄緑色 */
+}
+
+.content {
+  background-color: #00b522;   /* 背景色緑色 */
+  padding: 20px;                /* 内側余白,全20px */
+  max-width: 700px;            /* 領域幅の最大値を指定する*/
+  flex-grow: 1;                /* flexboxの比率を決める要素 */
+  display: flex;               /* 親にflexboxを適用,要素を横に変更 */
+  flex-wrap: wrap;             /* flexboxを単一行に
+                                  押し込むか、あるいは
+                                  複数行に折り返してもよいかを
+                                  指定します
+                                  記述の順番注意 */
+  justify-content: center;     /* flexboxの配置を中央に指定 */
+}
+
+.content > div {
+  background-color: #fff75a;   /* 背景色水色 */
+  flex-basis: 200px;           /* flexbox初期値の寸法横幅指定*/
+  height: 130px;               /* 高さ130px */
+  margin: 10px;                /* 外側余白10px */
+}
+
+.footer {
+  background-color: #52a1ff;   /* 背景色青色 */
+  padding: 20px;               /* 内側余白20px */
+  display: flex;               /* flexboxを親に指定 */
+  flex-wrap: wrap;             /* flexboxを単一,複数,折り返し指定 */
+  justify-content: center;     /* flexbox配置を中央寄せ */
+}
+
+.footer > div {
+  background-color: #b6e7ff;   /* 背景色水色 */
+  width: 45%;                  /* 横幅45% */
+  max-width: 600px;            /* 最大値600px */
+  height: 40px;                /* 高さ40px */
+  margin: 10px;                /* 外側余白10px */
+}
+
+

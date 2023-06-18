@@ -104,7 +104,7 @@ main {
   margin-bottom: 20px;                   /* 外側余白下20px */
   border-bottom: 1px solid #f7f7f7;      /* 実線1px */
   display: flex;                         /* Flex box適用 */
-  justify-content: flex-start;           /* */
+  justify-content: flex-start;           /* flexの配置を前に指定 */
 }
 
 .blog-image {                            /* */
