@@ -9,43 +9,21 @@
                                           取るよう
                                           ブラウザーに
                                           指示します */
+  color: ff9A4B;                       /* 文字色黒指定 */
+}
+
+a {
+  text-decoration: none;               /* アンダーライン無効 */
 }
 
 header {
-  width: 100%;               /* 横幅100% */
-  height: 150px;             /* 高さ150px */
-  background-color: black;     /* 背景色,紫 */
-}
-
-.box-list-1 {
-  width: 100%;               /* 横幅100% */
-  height: 150px;             /* 高さ150px */
-  background-color: red;     /* 背景色,紫 */
-}
-
-main {
-  
-}
-
-.main-left {
-  
-}
-
-.main-right {
-  
-}
-
-.box-list-2 {
-  
+ width:   100%;                         /* 横幅いっぱい */
+ height:  50px;                         /* 高さ50px */
+ background-color: #CC00FF;                 /* 背景色red */
 }
 
 footer {
-  width: 100%;               /* 横幅100% */
-  height: 150px;             /* 高さ150px */
-  background-color: red;     /* 背景色,紫 */
+  width:   100%;                         /* 横幅いっぱい */
+  height:  50px;                         /* 高さ50px */
+  background-color: #6666FF;             /* 背景色水色 */
 }
-
-.box-list-3 {
-  
-}
-
